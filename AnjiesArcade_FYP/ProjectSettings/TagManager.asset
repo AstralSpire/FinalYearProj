@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interact
+  - Enemies
+  - Collectibles
+  - FlyAway
+  - Maze
+  - Runner
+  - Collectible
+  - Trigger
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -11,10 +20,10 @@ TagManager:
   - 
   - Water
   - UI
+  - Enemies
   - 
-  - 
-  - 
-  - 
+  - Collectibles
+  - Backgrounds
   - 
   - 
   - 

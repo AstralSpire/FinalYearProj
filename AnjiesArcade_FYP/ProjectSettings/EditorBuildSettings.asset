@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ArcadeRoom.unity
+    guid: ee1e97ad17328404597ab5f078995396
+  - enabled: 1
+    path: Assets/Scenes/FlyAway!.unity
+    guid: d06d18ee8f7a5fd4293a60d0e3828f62
+  - enabled: 1
+    path: Assets/Scenes/Runner.unity
+    guid: 99db6ee5ba9b50746b4743567bdb9269
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 6f0dc6114f271f544a9efa31b6c3fa6d
   m_configObjects: {}

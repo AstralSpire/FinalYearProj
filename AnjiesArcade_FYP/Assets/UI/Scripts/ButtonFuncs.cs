@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonFuncs : MonoBehaviour
+
 {
+    public string SceneLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,10 @@ public class ButtonFuncs : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(SceneLoad);
     }
 }
