@@ -10,12 +10,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float turnSpeed = 45f;
     private Animator animator;
     public TextMeshProUGUI interact;
-
+    private bool test;
 
     // Start is called before the first frame update
     void Start()
     {
-        //interact.gameObject.SetActive(false);
+        test = false;
+        interact.gameObject.SetActive(false);
         animator = GetComponent<Animator>();       
     }
 
@@ -27,52 +28,60 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
         animator.SetFloat("speed", velocity.z);
 
-        //Testing purposes
-        if (Input.GetKeyDown(KeyCode.F))
+        if (test)
         {
             SceneManager.LoadScene("FlyAway!");
         }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            SceneManager.LoadScene("Maze");
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("Runner");
-        }
+        //Testing purposes
+        //if (Input.GetKeyDown(KeyCode.F))
+        //{
+        //    SceneManager.LoadScene("FlyAway!");
+        //}
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    SceneManager.LoadScene("Maze");
+        //}
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    SceneManager.LoadScene("Runner");
+        //}
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        //if(collision.gameObject.tag == "FlyAway")
-        //{
-        //    Debug.Log("flyWorks");
-        //    interact.gameObject.SetActive(true);
-        //    if (Input.GetKeyDown(KeyCode.F))
-        //    {
-        //        SceneManager.LoadScene("FlyAway");
-        //    }
+        if (collision.gameObject.tag == "FlyAway")
+        {
+            test = true;
+            Debug.Log("flyWorks");
+            interact.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SceneManager.LoadScene("FlyAway!");
+            }
 
-        //}
-        //if (collision.gameObject.tag == "Maze")
-        //{
-        //    interact.gameObject.SetActive(true);
-        //    if (Input.GetKeyDown(KeyCode.F))
-        //    {
-        //        SceneManager.LoadScene("Maze");
-        //    }
-        //}
-        //if (collision.gameObject.tag == "Runner")
-        //{
-        //    interact.gameObject.SetActive(true);
-        //    if (Input.GetKeyDown(KeyCode.F))
-        //    {
-        //        SceneManager.LoadScene("Runner");
-        //    }
-        //}
-        //else
-        //{
-        //    interact.gameObject.SetActive(false);
-        //}
+        }
+        else if (collision.gameObject.tag == "Maze")
+        {
+            Debug.Log("mazeWorks");
+            interact.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SceneManager.LoadScene("Maze");
+            }
+        }
+        else if (collision.gameObject.tag == "Runner")
+        {
+            Debug.Log("runWorks");
+            interact.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SceneManager.LoadScene("Runner");
+            }
+        }
+        else
+        {
+            test = false;
+            interact.gameObject.SetActive(false);
+        }
     }
 }
