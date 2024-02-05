@@ -28,7 +28,7 @@ public class MazePlayer : MonoBehaviour
         //transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("ArcadeRoom");
+            Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
         }
     }
 

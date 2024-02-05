@@ -10,12 +10,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float turnSpeed = 45f;
     private Animator animator;
     public TextMeshProUGUI interact;
-    private bool test;
+    private bool Maze , Fly , Run;
 
     // Start is called before the first frame update
     void Start()
     {
-        test = false;
+        Fly = false;
         interact.gameObject.SetActive(false);
         animator = GetComponent<Animator>();       
     }
@@ -28,36 +28,21 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
         animator.SetFloat("speed", velocity.z);
 
-        if (test)
+        if (Fly && Input.GetKey(KeyCode.F)) 
         {
             SceneManager.LoadScene("FlyAway!");
         }
-        //Testing purposes
-        //if (Input.GetKeyDown(KeyCode.F))
-        //{
-        //    SceneManager.LoadScene("FlyAway!");
-        //}
-        //if (Input.GetKeyDown(KeyCode.M))
-        //{
-        //    SceneManager.LoadScene("Maze");
-        //}
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
-        //    SceneManager.LoadScene("Runner");
-        //}
+        
     }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "FlyAway")
         {
-            test = true;
+            Fly = true;
             Debug.Log("flyWorks");
             interact.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                SceneManager.LoadScene("FlyAway!");
-            }
+            
 
         }
         else if (collision.gameObject.tag == "Maze")
@@ -80,8 +65,24 @@ public class Player : MonoBehaviour
         }
         else
         {
-            test = false;
+            Fly = false;
+            //interact.gameObject.SetActive(false);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "FlyAway")
+        {
             interact.gameObject.SetActive(false);
         }
+        if (other.gameObject.tag == "Maze")
+        {
+            interact.gameObject.SetActive(false);
+        }
+        if (other.gameObject.tag == "Runner")
+        {
+            interact.gameObject.SetActive(false);
+        }
+        
     }
 }

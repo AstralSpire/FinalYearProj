@@ -6,10 +6,11 @@ public class CamMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
+    public GameObject menuPanel;
     // Start is called before the first frame update
     void Start()
     {
-
+        menuPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,5 +19,21 @@ public class CamMovement : MonoBehaviour
         var velocity = Vector3.forward * Input.GetAxis("Vertical") * speed;
         transform.Translate(velocity * Time.deltaTime);
         transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if(collision.gameObject.tag == "Door")
+        {
+            menuPanel.SetActive(true);
+        }
+        else
+        {
+            menuPanel.SetActive(false) ;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }
