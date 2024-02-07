@@ -16,6 +16,7 @@ public class PlatformScript : MonoBehaviour
     private sbyte poolCounter = 0;
     public List<Transform> CoinSpawns;
     public List<Transform> ObsSpawns;
+    public List<GameObject> ObstacleOptions;
     public GameObject Coin;
     public GameObject Obs;
 
@@ -78,7 +79,7 @@ public class PlatformScript : MonoBehaviour
     {
         ObsSpawns.Add(ground.transform.GetChild(8));
         ObsSpawns.Add(ground.transform.GetChild(9));
-
+        //int x  = randomNum();
         Transform randomelement = ObsSpawns[Random.Range(0, ObsSpawns.Count)];
         Instantiate(Obs, platforms[poolCounter].transform.position + new Vector3(randomNum(), 1f, randomNum()), Quaternion.identity);
     }
@@ -89,5 +90,11 @@ public class PlatformScript : MonoBehaviour
         return randNum;
     }
 
+    public int RandObs(int x)
+    {
+        int randNum = Random.RandomRange(0, 2);
+        randNum = x;
+        return randNum;
+    }
 
 }

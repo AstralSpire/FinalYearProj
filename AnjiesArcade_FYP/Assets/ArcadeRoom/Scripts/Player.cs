@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
     private Animator animator;
-    public TextMeshProUGUI interact;
+    public GameObject interact;
     private bool Maze , Fly , Run;
 
     // Start is called before the first frame update
@@ -32,7 +32,15 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("FlyAway!");
         }
-        
+        if (Run && Input.GetKey(KeyCode.F))
+        {
+            SceneManager.LoadScene("Runner");
+        }
+        if (Maze && Input.GetKey(KeyCode.F))
+        {
+            SceneManager.LoadScene("Maze");
+        }
+
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -47,26 +55,24 @@ public class Player : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Maze")
         {
+            Maze = true;
             Debug.Log("mazeWorks");
             interact.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                SceneManager.LoadScene("Maze");
-            }
+            
         }
         else if (collision.gameObject.tag == "Runner")
         {
+            Run = true;
             Debug.Log("runWorks");
             interact.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                SceneManager.LoadScene("Runner");
-            }
+            
         }
         else
         {
+            Run = false;
+            Maze = false;
             Fly = false;
-            //interact.gameObject.SetActive(false);
+            
         }
     }
     private void OnTriggerExit(Collider other)
