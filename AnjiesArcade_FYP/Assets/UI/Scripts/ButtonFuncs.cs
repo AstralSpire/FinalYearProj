@@ -20,23 +20,40 @@ public class ButtonFuncs : MonoBehaviour
 
     public void Lobby()
     {
-        Time.timeScale = 1f;
+        
         SceneManager.LoadScene("ArcadeRoom");
     }
     public void Pause()
     {
         PausePanel.SetActive(true); HUD.SetActive(false);
-        Time.timeScale = 0.0f;
+        
     }
     public void Resume()
     {
         PausePanel.SetActive(false); HUD.SetActive(true);
-        Time.timeScale = 1.0f;
+        
     }
+    
 
     public void Quit1()
     {
-        Time.timeScale = 1f;
+        
         SceneManager.LoadScene("Menu");
+    }
+    public void timeStop()
+    {
+        Time.timeScale = 0.0f;
+    }
+    public void timeStart()
+    {
+        Time.timeScale = 1f;
+    }
+    public void MenuQuit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }

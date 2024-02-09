@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,9 @@ public class FlyPlayer : MonoBehaviour
     private Rigidbody2D rb;
     private int Health = 3;
     public GameObject health;
+    //testing purpose , add health bar later
+    public TextMeshProUGUI healthNum;
+    public GameObject deathPanel;
     
     // Start is called before the first frame update
     void Start()
@@ -20,10 +24,15 @@ public class FlyPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Movement();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("ArcadeRoom");
+        }
+        if(Health <= 0)
+        {
+            Death(); 
         }
     }
 
@@ -46,27 +55,22 @@ public class FlyPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Enemies")
         {
             Health --;
-           updatehealth();
+            healthNum.SetText(Health.ToString());
         }
         if(collision.gameObject.tag == "Collectible")
         {
             Destroy(collision.gameObject);
             Health ++;
+            healthNum.SetText(Health.ToString());
         }
 
 
     }
-    void updatehealth()
-    {
-        foreach (Transform health in health.gameObject.transform) { health.gameObject.SetActive(false); }
-        float temphealth = 0f;
-        foreach (Transform health in health.gameObject.transform)
-        {
-            if (temphealth < Health)
-            {
-                health.gameObject.SetActive(true);
-            }
-            temphealth += 1;
-        }
+   
+
+    private void Death()
+    {   
+        deathPanel.SetActive(true);
+        Time.timeScale = 0;       
     }
 }

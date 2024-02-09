@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -359,6 +360,7 @@
 "Assets/Minigames/FlyAway/Scripts/FlyEnemy.cs"
 "Assets/Minigames/FlyAway/Scripts/FlyPlayer.cs"
 "Assets/Minigames/Maze/Scripts/MazeCollectible.cs"
+"Assets/Minigames/Maze/Scripts/MazeGameController.cs"
 "Assets/Minigames/Maze/Scripts/MazePlayer.cs"
 "Assets/Minigames/Runner/Scripts/CoinScript.cs"
 "Assets/Minigames/Runner/Scripts/PlatformScript.cs"
