@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonFuncs : MonoBehaviour
 {
     public GameObject PausePanel;
+    public GameObject DeathPanel;
     public GameObject HUD;
     public string SceneLoad;
     // Start is called before the first frame update
@@ -31,7 +32,7 @@ public class ButtonFuncs : MonoBehaviour
     public void Resume()
     {
         PausePanel.SetActive(false); HUD.SetActive(true);
-        
+        DeathPanel.SetActive(false);
     }
     
 

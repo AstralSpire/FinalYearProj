@@ -10,10 +10,13 @@ public class FlyPlayer : MonoBehaviour
     private float score = 0;
     private Rigidbody2D rb;
     private int Health = 3;
+    private int MaxHealth = 2;
     public GameObject health;
     //testing purpose , add health bar later
     public TextMeshProUGUI healthNum;
     public GameObject deathPanel;
+    //public GameObject pausePanel;
+    public ButtonFuncs pause;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,7 @@ public class FlyPlayer : MonoBehaviour
         Movement();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("ArcadeRoom");
+            pause.Pause(); 
         }
         if(Health <= 0)
         {
@@ -60,7 +63,14 @@ public class FlyPlayer : MonoBehaviour
         if(collision.gameObject.tag == "Collectible")
         {
             Destroy(collision.gameObject);
-            Health ++;
+            if (Health <= MaxHealth)
+            {
+                Health++;
+            }
+            else
+            {
+                Debug.Log("max health reached");
+            }    
             healthNum.SetText(Health.ToString());
         }
 

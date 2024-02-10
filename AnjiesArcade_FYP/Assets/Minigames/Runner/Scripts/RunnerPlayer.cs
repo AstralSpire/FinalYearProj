@@ -11,6 +11,7 @@ public class RunnerPlayer : MonoBehaviour
     public float horiSpeed = 5f;
     public PlatformScript platformScript;
     public TextMeshProUGUI scoreNum;
+    public GameObject deathPanel;
 
     private float score = 0;
 
@@ -47,6 +48,12 @@ public class RunnerPlayer : MonoBehaviour
             score++;
             scoreNum.text = score.ToString();
             Debug.Log(score);
+        }
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("works");
+            deathPanel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
     private void OnTriggerEnter(Collider other)
