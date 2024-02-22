@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -365,6 +366,16 @@
 "Assets/Minigames/Runner/Scripts/PlatformScript.cs"
 "Assets/Minigames/Runner/Scripts/RunnerPlayer.cs"
 "Assets/Outdoors/Scripts/CamMovement.cs"
+"Assets/Tom's Terrain Tools/2DTools/Scripts/Camera2DFollow.cs"
+"Assets/Tom's Terrain Tools/2DTools/Scripts/CircleMoverSample.cs"
+"Assets/Tom's Terrain Tools/Example Data/Scripts/PlayerHoverController.cs"
+"Assets/Tom's Terrain Tools/Example Data/Scripts/SimpleSmoothMouseLook.cs"
+"Assets/Tom's Terrain Tools/Scripts/ForceGrassDistanceInEditor.cs"
+"Assets/Tom's Terrain Tools/Scripts/KeepOnSurface.cs"
+"Assets/Tom's Terrain Tools/Scripts/PlaceOnSurfaceAtStart.cs"
+"Assets/Tom's Terrain Tools/Scripts/SpawnInArea.cs"
+"Assets/Tom's Terrain Tools/Scripts/TerrainQualitySettings.cs"
+"Assets/Tom's Terrain Tools/Scripts/TreeExplosion.cs"
 "Assets/UI/Scripts/ButtonFuncs.cs"
 "Assets/UI/Scripts/WorldUI.cs"
 -langversion:9.0

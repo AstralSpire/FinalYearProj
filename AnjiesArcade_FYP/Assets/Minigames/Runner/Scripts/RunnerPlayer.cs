@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class RunnerPlayer : MonoBehaviour
 {
     public Rigidbody rb;
-    public float speed = 5f;
+    public float speed = 1f;
     public float horiSpeed = 5f;
     public PlatformScript platformScript;
     public TextMeshProUGUI scoreNum;
@@ -24,6 +24,8 @@ public class RunnerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rb.AddForce(0, 0, speed, ForceMode.Force);
+        
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         float horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * horiSpeed * Time.deltaTime);
