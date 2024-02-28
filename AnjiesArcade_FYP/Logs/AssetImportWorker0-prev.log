@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 16277 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16277 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-G:/Projects/FinalYearProj/AnjiesArcade_FYP
+C:/Users/anjum/Desktop/FinalYearProj/AnjiesArcade_FYP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55500
-Successfully changed project path to: G:/Projects/FinalYearProj/AnjiesArcade_FYP
-G:/Projects/FinalYearProj/AnjiesArcade_FYP
+63211
+Successfully changed project path to: C:/Users/anjum/Desktop/FinalYearProj/AnjiesArcade_FYP
+C:/Users/anjum/Desktop/FinalYearProj/AnjiesArcade_FYP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,15 +49,15 @@ G:/Projects/FinalYearProj/AnjiesArcade_FYP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29448] Host "[IP] 172.16.27.246 [Port] 0 [Flags] 2 [Guid] 3087318583 [EditorId] 3087318583 [Version] 1048832 [Id] WindowsEditor(7,AnjumasPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27600] Host "[IP] 172.16.27.246 [Port] 0 [Flags] 2 [Guid] 2234853969 [EditorId] 2234853969 [Version] 1048832 [Id] WindowsEditor(7,AnjumasPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29448] Host "[IP] 172.16.27.246 [Port] 0 [Flags] 2 [Guid] 3087318583 [EditorId] 3087318583 [Version] 1048832 [Id] WindowsEditor(7,AnjumasPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27600] Host "[IP] 172.16.27.246 [Port] 0 [Flags] 2 [Guid] 2234853969 [EditorId] 2234853969 [Version] 1048832 [Id] WindowsEditor(7,AnjumasPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 15.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path G:/Projects/FinalYearProj/AnjiesArcade_FYP/Assets
+[Subsystems] Discovering subsystems at path C:/Users/anjum/Desktop/FinalYearProj/AnjiesArcade_FYP/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -69,47 +69,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.035569 seconds.
-- Loaded All Assemblies, in  0.806 seconds
+Registered in 0.012805 seconds.
+- Loaded All Assemblies, in  0.465 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 628 ms
+Android Extension - Scanning For ADB Devices 416 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.569 seconds
-Domain Reload Profiling: 2368ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  1.105 seconds
+Domain Reload Profiling: 1568ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (193ms)
-	LoadAllAssembliesAndSetupDomain (354ms)
-		LoadAssemblies (164ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (226ms)
+		LoadAssemblies (96ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (338ms)
-			TypeCache.Refresh (336ms)
-				TypeCache.ScanAssembly (290ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (215ms)
+				TypeCache.ScanAssembly (196ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1569ms)
+	FinalizeReload (1105ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1401ms)
+		SetupLoadedEditorAssemblies (862ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (887ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (604ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (382ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,54 +117,81 @@ Domain Reload Profiling: 2368ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image G:\Projects\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image G:\Projects\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.401 seconds
-Refreshing native plugins compatible for Editor in 10.34 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\anjum\Desktop\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\anjum\Desktop\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.033 seconds
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.857 seconds
-Domain Reload Profiling: 3254ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  0.603 seconds
+Domain Reload Profiling: 1631ms
+	BeginReloadAssembly (207ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (98ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (233ms)
-	LoadAllAssembliesAndSetupDomain (1810ms)
-		LoadAssemblies (942ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (698ms)
+		LoadAssemblies (418ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (968ms)
-			TypeCache.Refresh (925ms)
-				TypeCache.ScanAssembly (897ms)
-			ScanForSourceGeneratedMonoScriptInfo (35ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (857ms)
+		AnalyzeDomain (360ms)
+			TypeCache.Refresh (340ms)
+				TypeCache.ScanAssembly (321ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (603ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (561ms)
+		SetupLoadedEditorAssemblies (403ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (383ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (266ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 6.22 ms, found 3 plugins.
+Failed to load shader (instanceID 472, GUID 67f9497810829eb4791ec19e95781e51)
+Failed to load shader (instanceID 458, GUID b34a29e523cb9d545881e193a079f2df)
+Failed to load shader (instanceID 474, GUID f997a3dc9254c44459323cced085150c)
+Failed to load shader (instanceID 436, GUID e8ce9961912f3214586fe8709b9012c1)
+Failed to load shader (instanceID 454, GUID 382151503e2a43a4ebb7366d1632731d)
+Failed to load shader (instanceID 456, GUID 7ad194cbe7d006f4bace915156972026)
+Failed to load shader (instanceID 460, GUID f7ea35cfb33fcad4ab8f2429ec103bef)
+Failed to load shader (instanceID 470, GUID d7640629310e79646af0f46eb55ae466)
+Failed to load shader (instanceID 444, GUID 0d8afcb51cc9f0349a6d190da929b838)
+Failed to load shader (instanceID 462, GUID 3020ac7ece79a7f4eb789a236f8bd6c5)
+Failed to load shader (instanceID 480, GUID 5bb6ef6f3e1b20348b4fdb01e4c404e2)
+Failed to load shader (instanceID 446, GUID 2c459b89a7c8b1a4fbefe0d81341651c)
+Failed to load shader (instanceID 440, GUID 0ef78d24e85a44f4da9d5b5eaa00e50b)
+Failed to load shader (instanceID 476, GUID fe144c7e314047f4bb779d555c5405ac)
+Failed to load shader (instanceID 438, GUID 5ab0816423f0dfe45841cab3b05ec9ef)
+Failed to load shader (instanceID 430, GUID cdbdb71de5f9c454b980f6d0e87f0afb)
+Failed to load shader (instanceID 432, GUID 4bf4cff0d0bac3d43894e2e8839feb40)
+Failed to load shader (instanceID 450, GUID 81af42a93ade3dd46a9b583d4eec76d6)
+Failed to load shader (instanceID 464, GUID a71093f2a4fe26a40805c22739e10e4a)
+Failed to load shader (instanceID 428, GUID c1e1d3119c6fd4646aea0b4b74cacc1a)
+Failed to load shader (instanceID 452, GUID 34a819c9e33402547a81619693adc8d5)
+Failed to load shader (instanceID 468, GUID 4117fce9491711c4094d33a048e36e73)
+Failed to load shader (instanceID 442, GUID f75014305794b3948a3c6d5ccd550e05)
+Failed to load shader (instanceID 448, GUID 51bcf79c50dc92e47ba87821b61100c3)
+Failed to load shader (instanceID 434, GUID 02d2da9bc88d25c4d878c1ed4e0b3854)
+Failed to load shader (instanceID 466, GUID b958ad1c92bd3d64c9e61318b8681dab)
+Failed to load shader (instanceID 478, GUID de7f3ac52268a194383c7d62c2a343c1)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3092 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.2 KB). Loaded Objects now: 3560.
-Memory consumption went from 125.3 MB to 125.3 MB.
-Total: 3.667700 ms (FindLiveObjects: 0.374700 ms CreateObjectMapping: 0.312200 ms MarkObjects: 2.860700 ms  DeleteObjects: 0.118300 ms)
+Unloading 3109 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.7 KB). Loaded Objects now: 3603.
+Memory consumption went from 136.3 MB to 136.3 MB.
+Total: 5.035100 ms (FindLiveObjects: 0.626100 ms CreateObjectMapping: 0.378600 ms MarkObjects: 3.851100 ms  DeleteObjects: 0.177600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,132 +207,89 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8686.867787 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(0bc65b4fab571c44db5d4e4e085af7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(0bc65b4fab571c44db5d4e4e085af7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8a4a6feec65be4a9f12880999e51e4') in 0.004157 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.058056 seconds.
-  path: Assets/Prefabs/Capsule.prefab
-  artifactKey: Guid(c9d61fd0e26c8fe43830ce1468e26d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Capsule.prefab using Guid(c9d61fd0e26c8fe43830ce1468e26d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f5e061e7f8baeb42c601f4f9c1f5e4') in 0.114903 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 2.142311 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(a0ce9a7144b23b946a141e6d1c1a976e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(a0ce9a7144b23b946a141e6d1c1a976e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2d415168c275e8e9c230635805b694') in 0.000481 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.803292 seconds.
-  path: Assets/Scenes/Runner.unity
-  artifactKey: Guid(99db6ee5ba9b50746b4743567bdb9269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Runner.unity using Guid(99db6ee5ba9b50746b4743567bdb9269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e47ba9c04d184a05d147866a504d09a') in 0.000486 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.557787 seconds.
-  path: Assets/Scenes/Runner
-  artifactKey: Guid(f7b7be0317cb9a64ba4db51267cdcd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Runner using Guid(f7b7be0317cb9a64ba4db51267cdcd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8392301799b465944ff89f967db5dcc') in 0.000524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.092977 seconds.
-  path: Assets/Scenes/Runner/LightingData.asset
-  artifactKey: Guid(6d2eb2ef8ec63b4428961ec9a36b0d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Runner/LightingData.asset using Guid(6d2eb2ef8ec63b4428961ec9a36b0d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff1ef70d40a844ebeef807c2340f14b') in 0.001509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002290 seconds.
-  path: Assets/Scenes/Runner/ReflectionProbe-0.exr
-  artifactKey: Guid(bb13907bf87885043aeb44c8c57fc24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Runner/ReflectionProbe-0.exr using Guid(bb13907bf87885043aeb44c8c57fc24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dddf920adb7eaf47e28077b6afe66bc6') in 0.053015 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 3.915678 seconds.
-  path: Assets/Minigames
-  artifactKey: Guid(94ca7c276736672419682480b806a439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames using Guid(94ca7c276736672419682480b806a439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f780ad9814d527613d1fd952df82e2b1') in 0.000747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.707607 seconds.
-  path: Assets/Minigames/Runner
-  artifactKey: Guid(1f0bf0f93330aa146aaec8abc7b4f951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner using Guid(1f0bf0f93330aa146aaec8abc7b4f951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ffe6f5fd268120a9c7aea56c8cf22ad') in 0.000518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.064063 seconds.
-  path: Assets/Minigames/Runner/Cube.prefab
-  artifactKey: Guid(e5c782471b9713845abdb08d777579c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Cube.prefab using Guid(e5c782471b9713845abdb08d777579c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eebfea1cda2a78ad87f162393eaa02f') in 0.017543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.004497 seconds.
-  path: Assets/Minigames/Runner/Mid.prefab
-  artifactKey: Guid(a6ddbf46b1ac31a468c962259e2498cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Mid.prefab using Guid(a6ddbf46b1ac31a468c962259e2498cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e06ab704d1e5469f157ba841a8d4b4') in 0.029432 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Minigames/Runner/Obstacle.prefab
-  artifactKey: Guid(9fbc28e654a25b14e99dbf9a92d97f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Obstacle.prefab using Guid(9fbc28e654a25b14e99dbf9a92d97f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a3869d0e78e6ddc32d5116a8c4d3f7') in 0.003102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 2.111293 seconds.
-  path: Assets/Minigames/Runner/Models
-  artifactKey: Guid(d5dc3e8592c7be74bbd5665bfe49027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Models using Guid(d5dc3e8592c7be74bbd5665bfe49027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8b4b0dae2cccae50b748f613a57cb0') in 0.000512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.061427 seconds.
-  path: Assets/Minigames/Runner/Models/grass.blend
-  artifactKey: Guid(2d84998b539abfe4b8d94fd8745e01c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Models/grass.blend using Guid(2d84998b539abfe4b8d94fd8745e01c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f004d5cc6e77df4ab5ed63f0c80be8d2') in 0.107715 seconds
+  Time since last request: 5396.284969 seconds.
+  path: Assets/coin.blend
+  artifactKey: Guid(0ae68046cde80a34291ab0b13e0bf2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/coin.blend using Guid(0ae68046cde80a34291ab0b13e0bf2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca786938496dec593614b537f7d1c5c') in 0.193365 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 8
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Minigames/Runner/Models/wallss.prefab
-  artifactKey: Guid(2dc02e3a9bce8ff4ea59cfd56adc3a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Minigames/Runner/Models/wallss.prefab using Guid(2dc02e3a9bce8ff4ea59cfd56adc3a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a89cb36ffd9ca33092ffea8d276ad6') in 0.022107 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\anjum\Desktop\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\anjum\Desktop\FinalYearProj\AnjiesArcade_FYP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.743 seconds
+Refreshing native plugins compatible for Editor in 4.43 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.941 seconds
+Domain Reload Profiling: 1681ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (495ms)
+		LoadAssemblies (294ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (274ms)
+			TypeCache.Refresh (270ms)
+				TypeCache.ScanAssembly (260ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (943ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (380ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (237ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Failed to load shader (instanceID 472, GUID 67f9497810829eb4791ec19e95781e51)
+Failed to load shader (instanceID 458, GUID b34a29e523cb9d545881e193a079f2df)
+Failed to load shader (instanceID 474, GUID f997a3dc9254c44459323cced085150c)
+Failed to load shader (instanceID 436, GUID e8ce9961912f3214586fe8709b9012c1)
+Failed to load shader (instanceID 454, GUID 382151503e2a43a4ebb7366d1632731d)
+Failed to load shader (instanceID 456, GUID 7ad194cbe7d006f4bace915156972026)
+Failed to load shader (instanceID 460, GUID f7ea35cfb33fcad4ab8f2429ec103bef)
+Failed to load shader (instanceID 470, GUID d7640629310e79646af0f46eb55ae466)
+Failed to load shader (instanceID 444, GUID 0d8afcb51cc9f0349a6d190da929b838)
+Failed to load shader (instanceID 462, GUID 3020ac7ece79a7f4eb789a236f8bd6c5)
+Failed to load shader (instanceID 480, GUID 5bb6ef6f3e1b20348b4fdb01e4c404e2)
+Failed to load shader (instanceID 446, GUID 2c459b89a7c8b1a4fbefe0d81341651c)
+Failed to load shader (instanceID 440, GUID 0ef78d24e85a44f4da9d5b5eaa00e50b)
+Failed to load shader (instanceID 476, GUID fe144c7e314047f4bb779d555c5405ac)
+Failed to load shader (instanceID 438, GUID 5ab0816423f0dfe45841cab3b05ec9ef)
+Failed to load shader (instanceID 430, GUID cdbdb71de5f9c454b980f6d0e87f0afb)
+Failed to load shader (instanceID 432, GUID 4bf4cff0d0bac3d43894e2e8839feb40)
+Failed to load shader (instanceID 450, GUID 81af42a93ade3dd46a9b583d4eec76d6)
+Failed to load shader (instanceID 464, GUID a71093f2a4fe26a40805c22739e10e4a)
+Failed to load shader (instanceID 428, GUID c1e1d3119c6fd4646aea0b4b74cacc1a)
+Failed to load shader (instanceID 452, GUID 34a819c9e33402547a81619693adc8d5)
+Failed to load shader (instanceID 468, GUID 4117fce9491711c4094d33a048e36e73)
+Failed to load shader (instanceID 442, GUID f75014305794b3948a3c6d5ccd550e05)
+Failed to load shader (instanceID 448, GUID 51bcf79c50dc92e47ba87821b61100c3)
+Failed to load shader (instanceID 434, GUID 02d2da9bc88d25c4d878c1ed4e0b3854)
+Failed to load shader (instanceID 466, GUID b958ad1c92bd3d64c9e61318b8681dab)
+Failed to load shader (instanceID 478, GUID de7f3ac52268a194383c7d62c2a343c1)
+Refreshing native plugins compatible for Editor in 5.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (0 B). Loaded Objects now: 3609.
-Memory consumption went from 73.4 MB to 73.4 MB.
-Total: 5.314200 ms (FindLiveObjects: 0.312000 ms CreateObjectMapping: 0.139000 ms MarkObjects: 4.842000 ms  DeleteObjects: 0.019600 ms)
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3649.
+Memory consumption went from 131.8 MB to 131.7 MB.
+Total: 4.766700 ms (FindLiveObjects: 0.547000 ms CreateObjectMapping: 0.249100 ms MarkObjects: 3.886400 ms  DeleteObjects: 0.082700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -321,8 +305,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
