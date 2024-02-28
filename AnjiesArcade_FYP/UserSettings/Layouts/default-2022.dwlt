@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 500
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -608,9 +608,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 125.424774, y: -132.01529, z: -0.5717388}
+    m_Target: {x: 13.144577, y: -114.88905, z: -139.65947}
     speed: 2
-    m_Value: {x: 125.424774, y: -132.01529, z: -0.5717388}
+    m_Value: {x: 13.144577, y: -114.88905, z: -139.65947}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -656,13 +656,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.27380806, y: 0.6502551, z: -0.27337566, w: 0.65408}
+    m_Target: {x: 0.009793238, y: 0.93988067, z: -0.34066758, w: 0.028878225}
     speed: 2
-    m_Value: {x: 0.27334884, y: 0.6511191, z: -0.27373716, w: 0.6529872}
+    m_Value: {x: 0.010302375, y: 0.9396673, z: -0.34059122, w: 0.030282564}
   m_Size:
-    m_Target: 95.894875
+    m_Target: 95.31349
     speed: 2
-    m_Value: 95.894875
+    m_Value: 99.8047
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 0e5d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: f8deffffec670000
+      m_ExpandedIDs: fcfaffff585b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -997,7 +997,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Outdoors/Models
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1005,16 +1005,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Outdoors/Models
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\anjum\Desktop\FinalYearProj\AnjiesArcade_FYP
+  m_LastProjectPath: G:\Projects\FinalYearProj\AnjiesArcade_FYP
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: ee680000
-    m_LastClickedID: 26862
-    m_ExpandedIDs: 00000000fa590000065a00001e5a00008e5a0000ee68000000ca9a3bffffff7f
+    m_SelectedIDs: 0e5d0000
+    m_LastClickedID: 23822
+    m_ExpandedIDs: 00000000ea5c0000ec5c0000ee5c0000f05c0000f25c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1042,7 +1042,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa590000065a00001e5a00008e5a0000ee680000
+    m_ExpandedIDs: 00000000ea5c0000ec5c0000ee5c0000f05c0000f25c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000225900003a5b0000786c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
