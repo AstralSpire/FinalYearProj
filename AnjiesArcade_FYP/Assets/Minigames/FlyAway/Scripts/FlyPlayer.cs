@@ -21,6 +21,7 @@ public class FlyPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1.0f;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -46,6 +47,10 @@ public class FlyPlayer : MonoBehaviour
 
     private void Movement()
     {
+        if(Input.GetKey(KeyCode.W))
+        {
+            Debug.Log("W works");
+        }
         float _Hori = Input.GetAxis("Horizontal");
         float _Ver = Input.GetAxis("Vertical");
 
