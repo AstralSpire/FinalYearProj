@@ -11,10 +11,11 @@ public class MazePlayer : MonoBehaviour
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
     public Camera PlayerCamera;
+    public GameObject WinnerPanel;
     // Start is called before the first frame update
     void Start()
     {
-        
+        WinnerPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,6 +45,11 @@ public class MazePlayer : MonoBehaviour
         if (collision.gameObject.tag == "Collectible")
         {
             Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.tag == "Door")
+        {
+            WinnerPanel.SetActive(true);
+            Debug.Log("Win works");
         }
     }
 }
