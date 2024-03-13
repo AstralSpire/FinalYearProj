@@ -427,6 +427,7 @@
 "Assets/Minigames/Maze/Scripts/MazePlayer.cs"
 "Assets/Minigames/Runner/Scripts/CoinScript.cs"
 "Assets/Minigames/Runner/Scripts/PlatformScript.cs"
+"Assets/Minigames/Runner/Scripts/RunnerController.cs"
 "Assets/Minigames/Runner/Scripts/RunnerPlayer.cs"
 "Assets/Outdoors/Scripts/CamMovement.cs"
 "Assets/Tom's Terrain Tools/2DTools/Scripts/Camera2DFollow.cs"
