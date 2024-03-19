@@ -18,6 +18,12 @@ public class RunnerPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!PlayerPrefs.HasKey("RunnerCurrentScore"))
+        {
+            PlayerPrefs.SetFloat("RunnerCurrentScore", score);
+        }
+        StartCoroutine(Timer());
+        Debug.Log(PlayerPrefs.GetFloat("RunnerCurrentScore"));
         //Time.timeScale = 1f;    
     }
 
@@ -25,14 +31,15 @@ public class RunnerPlayer : MonoBehaviour
     void Update()
     {
         //rb.AddForce(0, 0, speed, ForceMode.Force);
-        
+
+        //Debug.Log(speed);
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         float horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * horiSpeed * Time.deltaTime);
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("ArcadeRoom");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    SceneManager.LoadScene("ArcadeRoom");
+        //}
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -45,15 +52,20 @@ public class RunnerPlayer : MonoBehaviour
         //}
         if(collision.gameObject.tag == "Collectible")
         {
-            collision.gameObject.SetActive(false);
-            speed++;
+            
+            //collision.gameObject.SetActive(false);
+            //speed++;
             score++;
             scoreNum.text = score.ToString();
-            Debug.Log(score);
+            //Debug.Log(score);
         }
         if(collision.gameObject.tag == "Obstacle")
         {
-            Debug.Log("works");
+            if(PlayerPrefs.HasKey("RunnerCurrentScore") && PlayerPrefs.GetFloat("RunnerCurrentScore") < score)
+            { 
+                PlayerPrefs.SetFloat("RunnerCurrentScore" , score);
+            }
+            //Debug.Log("works");
             deathPanel.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -62,8 +74,15 @@ public class RunnerPlayer : MonoBehaviour
     {
         if (other.gameObject.tag == "Trigger")
         {
-            Debug.Log("it works");
+            //Debug.Log("it works");
             platformScript.GroundMove();
         }
+    }
+
+    private IEnumerator Timer()
+    {
+        speed += 0.5f;
+        yield return new WaitForSeconds(10);
+        StartCoroutine(Timer());
     }
 }

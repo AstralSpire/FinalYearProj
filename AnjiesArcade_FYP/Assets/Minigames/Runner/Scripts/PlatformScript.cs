@@ -23,7 +23,7 @@ public class PlatformScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
 
         platforms = new List<GameObject>();
         for ( int i = 0; i < groundCount; i++ )
@@ -84,15 +84,15 @@ public class PlatformScript : MonoBehaviour
         Instantiate(Obs, platforms[poolCounter].transform.position + new Vector3(randomNum(), 1f, randomNum()), Quaternion.identity);
     }
 
-    public int randomNum()
+    public float randomNum()
     {
-        int randNum = Random.RandomRange(-4, 4);
+        float randNum = Random.Range(-3.75f, 3.75f);
         return randNum;
     }
 
     public int RandObs(int x)
     {
-        int randNum = Random.RandomRange(0, 2);
+        int randNum = Random.Range(0, 2);
         randNum = x;
         return randNum;
     }

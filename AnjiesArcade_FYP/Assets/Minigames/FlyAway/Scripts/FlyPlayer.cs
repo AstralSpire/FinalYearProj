@@ -17,6 +17,7 @@ public class FlyPlayer : MonoBehaviour
     public GameObject deathPanel;
     //public GameObject pausePanel;
     public ButtonFuncs pause;
+    public GameObject Coin;
     
     // Start is called before the first frame update
     void Start()
@@ -67,9 +68,10 @@ public class FlyPlayer : MonoBehaviour
         }
         if(collision.gameObject.tag == "Collectible")
         {
-            Destroy(collision.gameObject);
+           // Destroy(collision.gameObject);
             if (Health <= MaxHealth)
             {
+                Destroy(collision.gameObject);
                 Health++;
             }
             else
@@ -78,14 +80,36 @@ public class FlyPlayer : MonoBehaviour
             }    
             healthNum.SetText(Health.ToString());
         }
+        if(collision.gameObject.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+            SpawnCoin();
+            score++;
+        }
 
 
     }
    
+    public void SpawnCoin()
+    {
+        Instantiate(Coin, new Vector3(randomNumX(), randomNumY(), 1), Quaternion.identity);    
+    }
 
     private void Death()
     {   
         deathPanel.SetActive(true);
         Time.timeScale = 0;       
     }
+
+    public int randomNumX()
+    {
+        int randNum = Random.RandomRange(-33, 38);
+        return randNum;
+    }
+    public int randomNumY()
+    {
+        int randNum = Random.RandomRange(-10, 14);
+        return randNum;
+    }
+
 }
