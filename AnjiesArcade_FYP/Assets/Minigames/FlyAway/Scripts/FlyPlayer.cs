@@ -14,10 +14,14 @@ public class FlyPlayer : MonoBehaviour
     public GameObject health;
     //testing purpose , add health bar later
     public TextMeshProUGUI healthNum;
+    public TextMeshProUGUI scoreNum;
+    private int scoreCounter;
     public GameObject deathPanel;
     //public GameObject pausePanel;
     public ButtonFuncs pause;
     public GameObject Coin;
+    public GameObject Enemy;
+    public Transform EnemySpawn;
     
     // Start is called before the first frame update
     void Start()
@@ -29,6 +33,12 @@ public class FlyPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (scoreCounter >= 5)
+        {
+            scoreCounter = 0;
+            Debug.Log("sPAWNED DOOG");
+            //Instantiate(Enemy, EnemySpawn.position, Quaternion.identity);
+        }
 
         Movement();
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -85,6 +95,8 @@ public class FlyPlayer : MonoBehaviour
             Destroy(collision.gameObject);
             SpawnCoin();
             score++;
+            scoreCounter++;
+            scoreNum.text = score.ToString();
         }
 
 
