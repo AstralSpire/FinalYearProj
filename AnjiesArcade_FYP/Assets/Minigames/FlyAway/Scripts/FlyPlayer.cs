@@ -37,7 +37,7 @@ public class FlyPlayer : MonoBehaviour
         {
             scoreCounter = 0;
             Debug.Log("sPAWNED DOOG");
-            //Instantiate(Enemy, EnemySpawn.position, Quaternion.identity);
+            Instantiate(Enemy, EnemySpawn.position, Quaternion.identity);
         }
 
         Movement();

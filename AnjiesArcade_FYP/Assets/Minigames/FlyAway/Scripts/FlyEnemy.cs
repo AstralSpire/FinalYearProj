@@ -9,13 +9,13 @@ public class FlyEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetPlayer = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         //var step = speed * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed);
+        transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position , speed);
     }
 }
