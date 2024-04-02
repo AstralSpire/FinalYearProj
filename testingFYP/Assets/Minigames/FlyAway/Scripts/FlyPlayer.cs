@@ -17,6 +17,7 @@ public class FlyPlayer : MonoBehaviour
     public TextMeshProUGUI scoreNum;
     private int scoreCounter;
     public GameObject deathPanel;
+    public GameObject startPanel;
     //public GameObject pausePanel;
     public ButtonFuncs pause;
     public GameObject Coin;
@@ -26,7 +27,8 @@ public class FlyPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 1.0f;
+        startPanel.SetActive(true);
+        Time.timeScale = 0.0f;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -124,4 +126,8 @@ public class FlyPlayer : MonoBehaviour
         return randNum;
     }
 
+    public void StartPanel()
+    {
+        startPanel.SetActive(false);
+    }
 }

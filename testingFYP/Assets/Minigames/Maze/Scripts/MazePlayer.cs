@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,8 @@ public class MazePlayer : MonoBehaviour
     [SerializeField] private float turnSpeed = 45f;
     public Camera PlayerCamera;
     public GameObject WinnerPanel;
+    public int score;
+    public TextMeshProUGUI scoreTxt;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,8 @@ public class MazePlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Collectible")
         {
+            score++;
+            scoreTxt.text = score.ToString() + "/14"; 
             Destroy(collision.gameObject);
         }
         if(collision.gameObject.tag == "Door")
