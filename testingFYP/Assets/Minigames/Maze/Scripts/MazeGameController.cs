@@ -17,7 +17,7 @@ public class MazeGameController : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        PausePanel.SetActive(false);
+        //PausePanel.SetActive(false);
         HUD.SetActive(false);
         Instruc.SetActive(true);
         PlayBtn.SetActive(true);

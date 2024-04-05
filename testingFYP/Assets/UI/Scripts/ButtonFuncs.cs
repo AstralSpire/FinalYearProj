@@ -31,7 +31,8 @@ public class ButtonFuncs : MonoBehaviour
     }
     public void Resume()
     {
-        PausePanel.SetActive(false); HUD.SetActive(true);
+        //PausePanel.SetActive(false); 
+        HUD.SetActive(true);
         
     }
     
