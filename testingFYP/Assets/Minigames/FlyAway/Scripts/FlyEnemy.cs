@@ -9,6 +9,7 @@ public class FlyEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //speed = Random.Range(1, 1.5f);
         targetPlayer = GameObject.Find("Player").transform;
     }
 
@@ -16,6 +17,12 @@ public class FlyEnemy : MonoBehaviour
     void Update()
     {
         //var step = speed * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position , speed);
+        if(Time.timeScale == 1.0f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed);
+        }
+        
+        
+        
     }
 }

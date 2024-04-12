@@ -1367,6 +1367,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82c1e7fa490d10644bcb891012e9d0a5, type: 2}
+    - target: {fileID: -1461304994638716399, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5feb5e6826e441340abb6a337eadf7f7, type: 2}
+    - target: {fileID: -804731622281664130, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5feb5e6826e441340abb6a337eadf7f7, type: 2}
     - target: {fileID: 919132149155446097, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
       propertyPath: m_Name
       value: RunnerWall (1)
@@ -1622,6 +1634,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82c1e7fa490d10644bcb891012e9d0a5, type: 2}
+    - target: {fileID: -1461304994638716399, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5feb5e6826e441340abb6a337eadf7f7, type: 2}
+    - target: {fileID: -804731622281664130, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5feb5e6826e441340abb6a337eadf7f7, type: 2}
     - target: {fileID: 919132149155446097, guid: d6a06e566c41f5742999aa5215daa96a, type: 3}
       propertyPath: m_Name
       value: RunnerWall
