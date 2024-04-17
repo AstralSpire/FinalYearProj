@@ -42,12 +42,11 @@ public class PlatformScript : MonoBehaviour
 
     public void GroundMaker(int i)
     {
-
+        //Adding new platform onto the end of the current list of platforms.
         platforms.Add((GameObject)Instantiate(ground, spawnPoint, Quaternion.identity));
         spawnPoint = platforms[i].transform.GetChild(0).transform.position;
+
         Instantiate(Coin, spawnPoint + new Vector3(randomNum(), 1f, randomNum()), Quaternion.identity);
-        //Collision check for the obsticle
-        //on obsticle spawned, do a distance check to all coins and obsticles if too close instantiate a new obsticle then destroy this one
         Instantiate(Obs, spawnPoint + new Vector3(randomNum(), 1f, randomNum()), Quaternion.identity);
     }
 
