@@ -14,7 +14,7 @@ public class RunnerPlayer : MonoBehaviour
     public GameObject deathPanel;
 
     private float score = 0;
-
+    public TextMeshProUGUI WinScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,14 +60,15 @@ public class RunnerPlayer : MonoBehaviour
             scoreNum.text = score.ToString();
             //Debug.Log(score);
         }
-        if(collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle")
         {
-            if(PlayerPrefs.HasKey("RunnerCurrentScore") && PlayerPrefs.GetFloat("RunnerCurrentScore") < score)
-            { 
-                PlayerPrefs.SetFloat("RunnerCurrentScore" , score);
+            if (PlayerPrefs.HasKey("RunnerCurrentScore") && PlayerPrefs.GetFloat("RunnerCurrentScore") < score)
+            {
+                PlayerPrefs.SetFloat("RunnerCurrentScore", score);
             }
             //Debug.Log("works");
             deathPanel.SetActive(true);
+            WinScore.text = "Score: " + score.ToString();
             Time.timeScale = 0f;
         }
     }

@@ -46,6 +46,7 @@ public class CamMovement : MonoBehaviour
         if(collision.gameObject.tag == "Door")
         {
             triggercheck.PauseOn();
+            Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
             //menuPanel.SetActive(true);
         }
         else

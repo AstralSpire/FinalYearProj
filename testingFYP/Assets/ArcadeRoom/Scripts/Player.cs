@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
         Time.timeScale = 1;
         Fly = false;
         interact.gameObject.SetActive(false);
-        animator = GetComponent<Animator>();       
+        animator = GetComponent<Animator>();
+        //Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
     }
 
     // Update is called once per frame

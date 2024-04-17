@@ -15,6 +15,10 @@ public class MazePlayer : MonoBehaviour
     public GameObject WinnerPanel;
     public int score;
     public TextMeshProUGUI scoreTxt;
+    public TextMeshProUGUI WinScore;
+    public GameObject HUD;
+   
+    public GameObject OnScreenLoc;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,5 +60,19 @@ public class MazePlayer : MonoBehaviour
             WinnerPanel.SetActive(true);
             Debug.Log("Win works");
         }
+        if(collision.gameObject.tag == "Win")
+        {
+            Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
+            Time.timeScale = 0f;
+            //WinDrop();
+            HUD.SetActive(false);
+            WinScore.text = score.ToString();
+            WinnerPanel.SetActive(true);
+        }
+    }
+    public void WinDrop()
+    {
+        float posY = Mathf.Lerp(WinnerPanel.transform.position.y, OnScreenLoc.transform.position.y, 5 * Time.unscaledDeltaTime);
+        WinnerPanel.transform.position = new Vector3(WinnerPanel.transform.position.x, posY, WinnerPanel.transform.position.z);
     }
 }

@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Runner
+  - Enemies
+  - Collectible
+  - Obstacle
+  - Trigger
+  - Door
+  - Win
   layers:
   - Default
   - TransparentFX
