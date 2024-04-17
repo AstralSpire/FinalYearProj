@@ -4919,6 +4919,7 @@ MonoBehaviour:
   speed: 2
   turnSpeed: 90
   interact: {fileID: 1672026447}
+  Fade: {fileID: 2104835797}
 --- !u!143 &1313562385
 CharacterController:
   m_ObjectHideFlags: 0

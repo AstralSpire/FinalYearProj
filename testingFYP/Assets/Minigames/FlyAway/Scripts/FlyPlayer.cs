@@ -23,6 +23,7 @@ public class FlyPlayer : MonoBehaviour
     public GameObject Coin;
     public GameObject Enemy;
     public Transform EnemySpawn;
+    public TextMeshProUGUI loseScore;
     
     // Start is called before the first frame update
     void Start()
@@ -112,6 +113,7 @@ public class FlyPlayer : MonoBehaviour
     private void Death()
     {   
         deathPanel.SetActive(true);
+        loseScore.text = "Score: " + score.ToString();
         Time.timeScale = 0;       
     }
 

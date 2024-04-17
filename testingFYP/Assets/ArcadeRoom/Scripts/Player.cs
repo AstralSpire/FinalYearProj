@@ -11,10 +11,12 @@ public class Player : MonoBehaviour
     private Animator animator;
     public GameObject interact;
     private bool Maze , Fly , Run;
+    public GameObject Fade;
 
     // Start is called before the first frame update
     void Start()
     {
+        Fade.SetActive(true);
         Time.timeScale = 1;
         Fly = false;
         interact.gameObject.SetActive(false);

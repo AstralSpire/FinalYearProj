@@ -12,9 +12,11 @@ public class CamMovement : MonoBehaviour
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
     public GameObject menuPanel;
+    public GameObject fade;
     // Start is called before the first frame update
     void Start()
     {
+        fade.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
     }
 
