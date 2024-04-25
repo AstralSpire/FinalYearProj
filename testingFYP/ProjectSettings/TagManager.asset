@@ -11,6 +11,9 @@ TagManager:
   - Trigger
   - Door
   - Win
+  - FlyAway
+  - Maze
+  - Bar
   layers:
   - Default
   - TransparentFX
