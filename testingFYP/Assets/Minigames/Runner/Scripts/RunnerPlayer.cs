@@ -12,6 +12,7 @@ public class RunnerPlayer : MonoBehaviour
     public PlatformScript platformScript;
     public TextMeshProUGUI scoreNum;
     public GameObject deathPanel;
+    public AudioSource coin;
 
     private float score = 0;
     public TextMeshProUGUI WinScore;
@@ -30,17 +31,14 @@ public class RunnerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //rb.AddForce(0, 0, speed, ForceMode.Force);
+        
 
         //Debug.Log(speed);
         float horizontalInput = Input.GetAxis("Horizontal");
-        //rb.AddForce(new Vector3(horiSpeed * horizontalInput, 0, speed));
+        
         Vector3 velocity = new Vector3(horiSpeed * horizontalInput, 0, speed);
         rb.MovePosition(rb.position + velocity * Time.deltaTime);
-        //transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
-        //transform.Translate(Vector3.right * horizontalInput * horiSpeed * Time.deltaTime);
-
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,8 +52,7 @@ public class RunnerPlayer : MonoBehaviour
         if(collision.gameObject.tag == "Collectible")
         {
             Destroy(collision.gameObject);
-            //collision.gameObject.SetActive(false);
-            //speed++;
+            coin.Play();
             score++;
             scoreNum.text = score.ToString();
             //Debug.Log(score);

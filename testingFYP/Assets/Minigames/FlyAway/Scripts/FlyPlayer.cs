@@ -24,7 +24,8 @@ public class FlyPlayer : MonoBehaviour
     public GameObject Enemy;
     public Transform EnemySpawn;
     public TextMeshProUGUI loseScore;
-    
+    public AudioSource coin , fish;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,6 +85,7 @@ public class FlyPlayer : MonoBehaviour
            // Destroy(collision.gameObject);
             if (Health <= MaxHealth)
             {
+                fish.Play();
                 Destroy(collision.gameObject);
                 Health++;
             }
@@ -97,6 +99,7 @@ public class FlyPlayer : MonoBehaviour
         {
             Destroy(collision.gameObject);
             SpawnCoin();
+            coin.Play();
             score++;
             scoreCounter++;
             scoreNum.text = score.ToString();

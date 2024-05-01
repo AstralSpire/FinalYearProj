@@ -17,7 +17,8 @@ public class MazePlayer : MonoBehaviour
     public TextMeshProUGUI scoreTxt;
     public TextMeshProUGUI WinScore;
     public GameObject HUD;
-   
+    public AudioSource coin;
+
     public GameObject OnScreenLoc;
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,7 @@ public class MazePlayer : MonoBehaviour
         if (collision.gameObject.tag == "Collectible")
         {
             score++;
+            coin.Play();
             scoreTxt.text = score.ToString() + "/14"; 
             Destroy(collision.gameObject);
         }
