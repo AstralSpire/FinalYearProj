@@ -10,8 +10,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float turnSpeed = 45f;
     private Animator animator;
     public GameObject interact;
-    private bool Maze , Fly , Run;
+    private bool Maze , Fly , Run, Bar;
     public GameObject Fade;
+    public GameObject BarText;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
         Fade.SetActive(true);
         Time.timeScale = 1;
         Fly = false;
+        BarText.gameObject.SetActive(false);
         interact.gameObject.SetActive(false);
         animator = GetComponent<Animator>();
         //Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
@@ -43,6 +45,11 @@ public class Player : MonoBehaviour
         if (Maze && Input.GetKey(KeyCode.F))
         {
             SceneManager.LoadScene("Maze");
+        }
+        if(Bar && Input.GetKey(KeyCode.F))
+        {
+            BarText.gameObject.SetActive(true);
+            interact.gameObject.SetActive(false);
         }
 
     }
@@ -71,11 +78,17 @@ public class Player : MonoBehaviour
             interact.gameObject.SetActive(true);
             
         }
+        else if (collision.gameObject.tag == "Bar")
+        {
+            //interact.gameObject.SetActive(true);   
+            BarText.gameObject.SetActive(true);
+        }
         else
         {
             Run = false;
             Maze = false;
             Fly = false;
+            Bar = false;
             
         }
     }
@@ -93,6 +106,11 @@ public class Player : MonoBehaviour
         {
             interact.gameObject.SetActive(false);
         }
-        
+        if (other.gameObject.tag == "Bar")
+        {
+            //interact.gameObject.SetActive(false);
+            BarText.gameObject.SetActive(false);
+        }
+
     }
 }
